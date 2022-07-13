@@ -1,0 +1,801 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+}
+html {
+    font-family: 'Roboto', sans-serif;
+}
+header {
+   /* border: 3px solid green; */
+    background-color: var(--amarillo);
+    display: flex;
+    flex-direction: column;
+}
+/*************** HEADER ********************/
+/** LOGO BARRA LUPA PAGO TARJETA */
+.logo-container {
+   /* border: 3px solid red; */
+    display: flex;
+    flex-direction: column;
+}
+/** MENU NAVEGACIÒN */
+
+/** MENU HAMBURGUESA */
+.burguer-container{
+  /*  border: 3px solid red; */
+    display: flex;
+    justify-content: center;
+}
+.logo-bar-container {
+   /* border: 3px solid grey; */
+    display: flex;
+}
+.card-container {
+    
+  font-size: 12px;
+    justify-content: center;
+    align-items: center;
+    padding: 23px;
+    
+}
+.logo {
+  /*  border: 3px solid pink; */
+    width: 50%;
+    padding: 10px;
+}
+.search-button-container {
+   /* border: 3px solid pink; */
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search-container {
+   /* border: 3px solid brown; */
+    display: flex;
+    height: 25px;
+    width: 90%;
+}
+.card-title {
+    font-weight: bold;
+    padding: 25px;
+    text-align: center;
+}
+.card-title i {
+    margin-right: 5px;
+}
+input {
+    width: 95%;
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+button{
+    width: 15%;
+    padding: 1px;
+    border: none;
+    background-color: white;
+    border-radius: 0 5px 5px 0;
+}
+.burguer-menu {
+    border: 3px solid black;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 5px;
+    border-radius: 5px;
+    color: var(--blanco);
+    background-color: var(--azul);
+}
+
+
+.menu-container {
+    padding: 0 10px;
+    display: none;
+}
+/***********************  FIN HEADER ***********************************/
+/************************* CSS JOACO ***********************************/
+
+img {
+  width: 100%;
+}
+
+main {
+  width: 90%;
+  margin: 0px auto;
+  
+}
+main article {
+  margin-top: 10px;
+  /* border: 1px solid red; */
+}
+main section .products {
+ 
+  display: flex;
+  flex-wrap: wrap;
+}
+main section .products article {
+  max-width: 49%;
+  transition: transform 1000ms, box-shadow 1000ms;
+}
+main section .products article:focus{
+  position: relative;
+  width: 50%;
+  z-index: 90;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+main section article .main-article {
+  border-top: 1px solid #ebebeb;
+  padding: 15px;
+  position: relative;
+  display: flex;
+}
+main section article .main-article .iconTruck,
+.descuentos {
+  color: #39b54a;
+  
+}
+main section article div .iconTruck {
+  display: block;
+  font-size: 16px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #39b54a;
+  background-color: #FFF;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  top: -15px;
+  transition: transform 1000ms;
+}
+main section article .main-article .precios {
+  font-size: 1rem;
+  width: 30%;
+  font-weight: 700;
+}
+main section article .main-article .descuentos {
+  width: 70%;
+}
+main section article .main-article .descuentos {
+  font-size: 0.8rem;
+  font-weight: 700; 
+}
+main section article .descripciones {
+  opacity: 0;
+  font-size: 18px;
+  font-weight: 700; 
+}
+main section .main-title-section-last-visit,
+.main-title-section-clearance {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  margin: 10px;
+  color: #3c3e41;
+}
+
+/*************************************************************************/
+
+/******************************* CLASE ANDREY **********************************/
+/*h3 {
+  margin-top: 20px;  
+  font-size: 24px;
+  }
+  
+  p {
+    font-size: 12px;
+  }
+  div.top-header {
+    display: flex;
+    padding: 5%;
+  }
+  
+  header {
+    background-color: #eac926;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .search-container{
+    display: flex;
+    padding: 2px;
+  }
+
+  header div.logo {
+    display: flex;
+    width: 50%;
+  }
+  
+  header div.logo {
+    padding: 10px;
+  }
+  header nav {
+    font-size: 12px;
+  }
+  
+  header ul li {
+    list-style-type: none;
+  }
+  
+  header ul li a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  header .form .input {
+    background-color: #fff;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    padding: 2px;
+  }
+  header .form .submit {
+    background-color: #fff;
+    border: 1px solid #000;
+    color: #666;
+    width: 10%;
+  }
+  
+  header div.top-header p {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  div.burger-menu {
+    text-align: center;
+  }
+  
+  div.burger-menu i {
+    background-color: #0044aa;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 20px;
+    height: 40px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    width: 40px;
+  }
+  
+  .price {
+    font-size: 1rem;
+  }
+  
+  .discount,
+  .description {
+    font-size: 16px;
+    font-weight: normal;
+  }
+ 
+ 
+  h3,
+  .description {
+    color: #666;
+  
+  }
+  
+  .description {
+    position: absolute;
+    opacity: 0;
+  }
+  
+  section.banner img {
+    width: 100%;
+  }
+  
+  main {
+    width: 90%;
+    margin: 0 auto;
+    
+  }
+  main .last-visit , .offers {
+    margin-top: 80px;
+  }
+  main section article {
+    background-color: #fff;
+    margin: 10px 0px;
+    position: relative;
+    height: 200px;
+      
+  }
+
+  
+  main section article img {
+    width: 100%;
+  }
+  main section article i,
+  .price {
+    width: 30%;
+  }
+  main section article i,
+  .discount {
+    color: #39b54a;
+    width: 70%;
+  }
+  
+  main section article i {
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #fff;
+    border-radius: 50%;
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px; 
+    
+  }
+  body > main > section.last-visit > div > article:nth-child(1):hover + body > main > section.last-visit > div > article:nth-child(1) > div > div.hover > h4{
+    display: block;
+  }
+
+
+  
+  article div.main-article {
+    width: 100%;
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    
+
+  }
+
+  .products {
+    display: flex;
+    flex-wrap: wrap;
+    
+  }*/
+/*************************************************************************************************/
+
+/*********FORMULARIO REGISTER*********************************/
+
+.main {
+ width: 50% ;
+  background: gainsboro ;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: gainsboro;
+  padding: 15px;
+  border-radius: 30%;
+ 
+} 
+.nombre {
+  
+  padding:10px 0 ;
+}
+
+.usuario {
+  padding:10px 0 ;
+}
+
+.calendario {
+  width: 53%;
+  padding:10px 0 ;
+}
+
+.domicilio {
+  padding:10px 0 ;
+}
+
+.perfil {
+  padding:10px 0 ;
+}
+
+.interes{
+  padding:10px 0 ;
+}
+
+.foto {
+  padding:10px 0 ;
+}
+
+.foto1 {
+  padding:10px 0 ;
+}
+
+.password {
+  padding:10px 0 ;
+}
+
+.confirm {
+  padding:10px 0 ;
+}
+
+.boton {
+  padding:10px 0 ;
+  display: flex;
+  justify-content: space-around;
+}
+
+.enviar{
+  background-color: var(--verde);
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+  font-weight: bold;
+  border-radius: 5px;
+  
+}
+
+.borrar{
+  background-color: red;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+  font-weight: bold;
+  border-radius: 5px;
+  border-radius: 5px;
+  
+}
+/************************************************************/
+
+/*********** LOGIN *******************************************/
+
+.usuario1 {
+  padding:10px 10px ;
+}
+
+.password1 {
+  padding:10px 10px ;
+  width: 210px;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: gainsboro;
+  padding: 15px;
+  border-radius: 30%;
+  height: 150px;
+ 
+} 
+
+/*.ingresar {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  align-items: center;
+  width: 200px;
+}*/
+
+
+.enviar1{
+  padding: 5px;
+  background-color: var(--verde);
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+  font-weight: bold;
+  border-radius: 5px;
+  position: relative;
+  top: 15px;
+  
+}
+/*************** FOOTER *************************************/
+.box{
+  padding: 15px;
+ 
+}
+
+.foot {
+  display: flex;
+  justify-content: space-around;
+}
+.iconos {
+  color: blue;
+  display: flex;
+ padding: 20px;
+justify-content: center; 
+
+}
+.text{
+   display: flex; 
+  justify-content: center;
+
+}
+
+.text2 {
+  display: flex;
+ text-align:center;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/**********************************************************/
+
+/*************************** MEDIA ************************/
+
+/*@media (min-width: 361px) {
+  html {
+    font-size: 14px;
+  }
+ 
+  
+main section .products {
+    justify-content: space-between;
+}
+  main section article {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    max-width: 45%;
+  }
+}
+
+@media (min-width: 768px) {
+
+    html {
+        font: size 12px ;
+      }
+      main section .products {
+        justify-content: space-between;
+    }
+     
+    main section article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        max-width: 20%;
+      }
+    
+    .logo-bar-container {
+        width: 50%;
+    }
+
+    .card-container {
+        width: 50%;
+        font-size: 12px;
+    }
+
+    .logo-container {
+        flex-direction: row;
+    }
+    .burguer-container{
+        display: none;
+    }
+
+    .menu-container {
+        display: flex;
+        justify-content: space-between;
+        font-weight: bold;
+    }
+
+    ul {
+        width: 45%;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 1024px) {
+  .card-container h2 {
+      font-size: 22px;
+  }
+  .description {
+    position: absolute;
+    border: #0044aa;
+    opacity: 1;
+  }
+
+}*/
+@media (max-width : 360px) {
+
+    html {
+      font-size: 14px;
+    }
+   
+    
+  main section .products {
+      justify-content: space-between;
+  }
+    main section article {
+      box-shadow: 0px 0px 10px rgb(100, 100, 100);
+      max-width:  47%;
+      flex-wrap: wrap;
+      display: flex;
+    }
+  }  
+  main section article .main-article .descripciones {
+      display: none;
+    }
+
+@media (min-width : 768px) {
+  html {
+        font: size 12px ;
+      }
+      main section .products {
+        justify-content: space-between;
+    }
+     
+    main section article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        max-width: 23%;
+        flex-wrap: wrap;
+        display: flex;
+      }
+    
+    .logo-bar-container {
+        width: 50%;
+    }
+
+    .card-container {
+        width: 50%;
+        font-size: 12px;
+    }
+
+    .logo-container {
+        flex-direction: row;
+    }
+    .burguer-container{
+        display: none;
+    }
+
+    .menu-container {
+        display: flex;
+        justify-content: space-between;
+        font-weight: bold;
+    }
+
+    ul {
+        width: 45%;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+  .main-header {
+      padding: 10px;
+      max-height: 150px;
+  }
+  .main-header .main-header-top-bar {
+      max-width: 97%;
+      max-height: 95px;
+      justify-content: space-between;
+  }
+  .main-header .logo {
+      width: 30%;
+      margin: 5px;
+  }
+  .main-header .main-header-top-bar .barra-busqueda {
+      width: 20%;
+  }
+  .main-header .burger-menu {
+      display: none;
+  }
+  
+  .main-header .main-header-top-bar .cuotas-tarjeta-container .h2-cuotas-tarjeta {
+      max-width: 230px;
+      text-align: center;
+      font-size: 18px;
+      margin: 5px;
+  }
+  .main-header .main-header-main-nav-bar {
+      display: flex;
+      margin-bottom: 10px;
+      justify-content: space-between;
+      max-width: 97%;
+  }
+  .main-header .main-header-main-nav-bar .left-nav-bar,
+  .right-nav-bar {
+      display: flex;
+      margin-top: 20px;
+  }
+  .main-header .main-header-main-nav-bar ul li {
+      margin: 0px 5px;
+  }
+  main section {
+      margin-top: 50px;
+  }
+  main section .products {
+      justify-content: space-between;
+  }
+  main section .products article:hover {
+      transform: scale(1.03);
+      z-index: 90;
+      box-shadow: 10px 0 12px -5px gray;
+  }
+  main section .products article:hover .iconTruck {
+      transform: rotate(-90deg);
+  }
+  main section .products article .precios, 
+  .descuentos {
+      font-size: 1.2rem;
+  }
+  main section .products article .descripciones {
+      position: absolute;
+     
+      right: 0;
+      left: 10px;
+      opacity: 0;
+      width: 97.5%;
+      font-size: 16px;
+      transition: opacity 1000ms, box-shadow 1000ms ;
+  }  
+  main section .products article:hover .descripciones{
+      opacity: 1;
+      box-shadow: 0 10px 12px gray;
+  } 
+  main section article .precios,
+  .descuentos {
+      font-size: 0.8rem;
+  }
+  main section article .descuentos {
+      margin-left: 15px;
+  }
+}
+@media (min-width : 1200px) {
+  .main-header .main-header-top-bar {
+      justify-content: space-around;
+  }
+  .main-header .main-header-top-bar .barra-busqueda {
+      margin-left: 25px;
+  }
+  .main-header .main-header-top-bar .cuotas-tarjeta-container .h2-cuotas-tarjeta {
+      max-width: none;
+      padding-top: 10px;
+  }
+  .main-header .logo {
+      width: 20%;
+  }
+  main section .products article {
+      max-width: 24%;
+  }
+  main section article div .descripciones {
+      display: block;
+      font-weight: 200;
+  }
+  footer section {
+      display: flex;
+      flex-wrap: wrap;
+  }
+  footer section .comentarios-footer {
+      width: 30%;
+      height: 150px;
+  }
+  footer section .comentarios-footer .footer-icon-container {
+      width: 15%;
+  }
+  footer section .comentarios-footer .footer-icon-container:hover {
+      color: rgb(243, 209, 16);
+  }
+  footer section .comentarios-footer ul {
+      width: 80%;
+      margin: auto;
+  }
+}
